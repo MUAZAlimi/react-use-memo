@@ -8,7 +8,7 @@ const App = () => {
 
   const sum = useCallback(() => num1 + num2, [num1, num2]);
 
-  const buildArray = useCallback(() => [num1, num1 + num2], [num1, num2]);
+  const buildArray = useCallback(() => [num1,  num2], [num1, num2]);
   useEffect(() => {
     console.log(`New sum. Value: ${buildArray()}`);
     setResult(buildArray());
