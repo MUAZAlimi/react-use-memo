@@ -43,6 +43,7 @@ const App = () => {
         placeholder="Typpe anything...."
         onChange={(e) => setRandomInput(e.target.value)}
       />
+      <p>Result: {randomInput}</p>
     </main>
   );
 };
